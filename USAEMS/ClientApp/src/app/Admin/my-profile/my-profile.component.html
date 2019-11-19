@@ -1,0 +1,97 @@
+<div class="container">
+    <form [formGroup]="myProfileForm">
+        <div class="row">
+            <div class="col">
+                <label>First Name:</label>
+                <input type="text" id="firstName" formControlName="firstName" class="form-control form-control-sm">
+            </div>
+            <div class="col">
+                <label>Last Name:</label>
+                <input type="text" id="lastName" formControlName="lastName" class="form-control form-control-sm">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Security Question:</label>
+                <select id="securityQuestion" formControlName="securityQuestion" class="form-control form-control-sm">
+                    <option value="0">Select a security question...</option>
+                    <option value="1">What was your childhood nickname?</option>
+                    <option value="2">What is the middle name of your oldest child?</option>
+                    <option value="3">Waht is your oldest sibling's middle name?</option>
+                    <option value="4">What school did you attend in 6th Grade?</option>
+                    <option value="5">What is your maternal grandmother's maiden name?</option>
+                    <option value="6">What was the last name of your third grade teacher?</option>
+                </select>
+            </div>
+            <div class="col">
+                <label>Security Answer:</label>
+                <input type="text" id="securityAnswer" formControlName="securityAnswer" class="form-control form-control-sm">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Email Address:</label>
+            <input type="email" id="email" formControlName="email" class="form-control form-control-sm">
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Cell Phone Number:</label>
+                <input type="tel" id="cellPhone" formControlName="cellPhone" class="form-control form-control-sm">
+            </div>
+            <div class="col">
+                <label>Cell Phone Carrier:</label>
+                <select id="cellCarrier" formControlName="cellCarrier" class="form-control form-control-sm">
+                    <option value="0">Select your cell phone carrier...</option>
+                    <option value="2">Alltell</option>
+                    <option value="1">AT&T</option>
+                    <option value="3">Boost</option>
+                    <option value="11">Metro PCS</option>
+                    <option value="5">Nextel</option>
+                    <option value="12">Powertel</option>
+                    <option value="10">Qwest</option>
+                    <option value="4">Sprint</option>
+                    <option value="13">Suncom</option>
+                    <option value="6">T-Mobile</option>
+                    <option value="14">Tracfone</option>r
+                    <option value="8">US Cellular</option>
+                    <option value="9">Verizon</option>
+                    <option value="7">Virgin Mobile USA</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Employer:</label>
+            <select id="employer" formControlName="employer" class="form-control form-control-sm" disabled>
+                <option value="0">Select your Employer...</option>
+                <option value="1">Arena</option>
+                <option value="2">KT Black Services</option>
+                <option value="3">Concessions</option>
+                <option value="4">Select-A-Seat</option>
+                <option value="5">Athletics</option>
+                <option value="6">Fire Marshall</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Student:</label>
+                <select id="student" formControlName="student" class="form-control form-control-sm" disabled>
+                    <option value="0">Student?</option>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <div class="col">
+                <label>Technical:</label>
+                <select id="student" formControlName="technical" class="form-control form-control-sm" disabled>
+                    <option value="0">Technical?</option>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+        </div>
+        <br />
+        <div class="btn-row">
+            <button type="submit" class="btn btn-primary btn-sm">Update</button>
+            <button type="button" class="btn btn-danger btn-sm">Cancel</button>
+        </div>
+    </form>
+</div>    
